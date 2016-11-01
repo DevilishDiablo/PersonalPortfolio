@@ -1,12 +1,18 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
 html,
 button,
 input,
 select,
-textarea {
+textarea
+{
     color: #222;
 }
 
-body {
+body
+{
     font-size: 1em;
     line-height: 1.4;
 }
@@ -17,12 +23,14 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+::-moz-selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
 
-::selection {
+::selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -31,7 +39,8 @@ body {
  * A better looking default horizontal rule
  */
 
-hr {
+hr
+{
     display: block;
     height: 1px;
     border: 0;
@@ -41,10 +50,11 @@ hr {
 }
 
 /*
- * Remove the gap between images and the bottom of their containers
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
-img {
+img
+{
     vertical-align: middle;
 }
 
@@ -52,7 +62,8 @@ img {
  * Remove default fieldset styles.
  */
 
-fieldset {
+fieldset
+{
     border: 0;
     margin: 0;
     padding: 0;
@@ -62,7 +73,8 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+textarea
+{
     resize: vertical;
 }
 
@@ -70,7 +82,8 @@ textarea {
    Chrome Frame prompt
    ========================================================================== */
 
-.chromeframe {
+.chromeframe
+{
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -80,47 +93,45 @@ textarea {
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
-
-body, html {
+body, html
+{
     height: 100%;
     min-height: 100%;
     background-color: #000000;
 }
-
 body {
-
 }
-
-.no-js {
+.no-js
+{
     padding-top: 106px;
 }
-
-h2 {
+h2
+{
     margin-top: 0;
 }
-
-.loading {
-    background: url("../img/ico_loading.gif") no-repeat center;
+.loading
+{
+    background: url("../img/ico_loading.gif") no-repeat center center;
 }
-
-section {
+section
+{
     min-width: 960px;
     opacity: 0;
 }
-
 .loaded section,
-.no-js section {
+.no-js section
+{
     opacity: 1;
     -webkit-transition: opacity 300ms ease-out;
     -moz-transition: opacity 300ms ease-out;
     transition: opacity 300ms ease-out;
 }
-
-main {
+main
+{
     overflow-x: hidden;
 }
-
-#preload {
+#preload
+{
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -128,89 +139,97 @@ main {
     top: 0;
     left: 0;
 }
-
-.bcg {
-    background: no-repeat fixed center;
+.bcg
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-.hsContainer {
+.hsContainer
+{
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.hsContent {
+.hsContent
+{
     max-width: 700px;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
 }
-
-    .hsContent h2 {
-        color: #fff8de;
-        background-color: rgba(0,0,0,0.5);
-        padding: 10px 5px;
-        font-size: 35px;
-        line-height: 38px;
-        margin-bottom: 12px;
-    }
-
-    .hsContent p {
-        width: 400px;
-        color: #b2b2b2;
-    }
-
-    .hsContent a {
-        color: #b2b2b2;
-        text-decoration: underline;
-    }
+.hsContent h2
+{
+    color: #fff8de;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 5px;
+    font-size: 35px;
+    line-height: 38px;
+    margin-bottom: 12px;
+}
+.hsContent p
+{
+    width: 400px;
+    color: #b2b2b2;
+}
+.hsContent a
+{
+    color: #b2b2b2;
+    text-decoration: underline;
+}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image: url("../img/bcg_slide-1.jpg")}
-#slide-1 .hsContent {
+#slide-1 .bcg {background-image:url("../img/bcg_slide-1.jpg")}
+#slide-1 .hsContent
+{
     bottom: 200px;
     top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image: url("../img/bcg_slide-2.jpg")}
-#slide-2 .hsContent {
+#slide-2 .bcg {background-image:url("../img/bcg_slide-2.jpg")}
+#slide-2 .hsContent
+{
     margin-left: -450px;
     top: auto;
 }
-#slide-2 h2 {
+#slide-2 h2
+{
     position: fixed;
     top: 70%;
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image: url("../img/bcg_slide-3.jpg")}
-#slide-3 .hsContent {
+#slide-3 .bcg {background-image:url("../img/bcg_slide-3.jpg")}
+#slide-3 .hsContent
+{
     margin-left: -239px;
 }
-
-    #slide-3 h2 {
-        color: #f2ead6;
-        background-color: rgba(0,0,0,0.6);
-    }
+#slide-3 h2
+{
+    color: #f2ead6;
+    background-color: rgba(0,0,0,0.6);
+}
 
 /* Slide 4 */
-#slide-4 .bcg {background-image: url("../img/bcg_slide-4.jpg")}
-#slide-4 .hsContent {
+#slide-4 .bcg {background-image:url("../img/bcg_slide-4.jpg")}
+#slide-4 .hsContent
+{
     margin-left: -450px;
     position: fixed;
     top: 250px;
 }
-
-    #slide-4 h2 {
-        background: none;
-        padding-left: 0;
-        padding-right: 0;
-    }
+#slide-4 h2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -220,7 +239,8 @@ main {
  * Image replacement
  */
 
-.ir {
+.ir
+{
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -228,7 +248,8 @@ main {
     *text-indent: -9999px;
 }
 
-.ir:before {
+.ir:before
+{
     content: "";
     display: block;
     width: 0;
@@ -239,7 +260,8 @@ main {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+.hidden
+{
     display: none !important;
     visibility: hidden;
 }
@@ -248,9 +270,10 @@ main {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
+.visuallyhidden
+{
     border: 0;
-    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -261,11 +284,12 @@ main {
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard
+ * when navigated to via the keyboard: h5bp.com/p
  */
 
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:focus
+{
     clip: auto;
     height: auto;
     margin: 0;
@@ -278,7 +302,8 @@ main {
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+.invisible
+{
     visibility: hidden;
 }
 
@@ -295,12 +320,14 @@ main {
  */
 
 .clearfix:before,
-.clearfix:after {
+.clearfix:after
+{
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+.clearfix:after
+{
     clear: both;
 }
 
@@ -309,7 +336,8 @@ main {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+.clearfix
+{
     *zoom: 1;
 }
 
@@ -319,41 +347,48 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em)
+{
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
 (-o-min-device-pixel-ratio: 5/4),
 (-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi) {
+(min-resolution: 120dpi)
+{
     /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
    Print styles.
-   Inlined to avoid required HTTP connection
+   Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
-    * {
+@media print
+{
+    *
+    {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
     }
 
     a,
-    a:visited {
+    a:visited
+    {
         text-decoration: underline;
     }
 
-    a[href]:after {
-        content: "(" attr(href) ")";
+    a[href]:after
+    {
+        content: " (" attr(href) ")";
     }
 
-    abbr[title]:after {
-        content: "(" attr(title) ")";
+    abbr[title]:after
+    {
+        content: " (" attr(title) ")";
     }
 
     /*
@@ -362,42 +397,50 @@ main {
 
     .ir a:after,
     a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    a[href^="#"]:after
+    {
         content: "";
     }
 
     pre,
-    blockquote {
+    blockquote
+    {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
 
-    thead {
-        display: table-header-group;
+    thead
+    {
+        display: table-header-group; /* h5bp.com/t */
     }
 
     tr,
-    img {
+    img
+    {
         page-break-inside: avoid;
     }
 
-    img {
+    img
+    {
         max-width: 100% !important;
     }
 
-    @page {
+    @page
+    {
         margin: 0.5cm;
     }
 
     p,
     h2,
-    h3 {
+    h3
+    {
         orphans: 3;
         widows: 3;
     }
 
     h2,
-    h3 {
+    h3
+    {
         page-break-after: avoid;
     }
 }
