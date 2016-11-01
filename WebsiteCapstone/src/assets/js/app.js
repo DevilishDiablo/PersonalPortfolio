@@ -1,12 +1,12 @@
 (function ($)
 {
     // Setup Variables
-    $window = $(window);
-    $slide = $('.homeSlide');
-    $body = $('body');
+    var window = $(window);
+    var slide = $('.homeSlide');
+    var body = $('body');
 
     // FadeIn all sections
-    $body.imagesLoaded(function()
+    body.imagesLoaded(function()
     {
         setTimeout(function()
         {
@@ -14,15 +14,16 @@
             adjustWindow();
 
             // Fade in sections
-            $body.removeClass('loading').addClass('loaded');
+            body.removeClass('loading').addClass('loaded');
         }, 800)
     });
 
     function adjustWindow()
     {
         // Init Skrollr
+        var skrollr = skrollr.init()
         // Get window size
-        winH = $window.height();
+        var winH = window.height();
 
         // Keep minimum height 550
         if (winH <= 550)
@@ -31,8 +32,9 @@
         }
 
         // Resize our slides
-        $slide.height(winH)
+        slide.height(winH)
 
         // Refresh Skrollr after resizing our sections
+        skrollr.refresh($('.homeSlide'))
     }
 }) ( jQuery )
