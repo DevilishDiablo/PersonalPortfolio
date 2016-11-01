@@ -21,7 +21,9 @@
     function adjustWindow()
     {
         // Init Skrollr
-        var skrollr = skrollr.init()
+        var skrollr = skrollr.init({
+           forceHeight: false
+        });
         // Get window size
         var winH = window.height();
 
